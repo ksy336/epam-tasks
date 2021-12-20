@@ -6,23 +6,22 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            int n;
+            int h;
             string str = "";
             do
             {
                 Console.WriteLine("Введите любое число: ");
                 str = Console.ReadLine();
-            } while (!int.TryParse(str, out n));
+            } while (!int.TryParse(str, out h));
             Console.Clear();
 
-            for (int i = 1; i <= n; i++)
+            for (int i = 0; i < h; i++)
             {
-                for (int j = 0; j < i; j++)
+                for (int j = 0; j <= i; j++)
                 {
                     Console.Write("*");
-                    if (j == i - 1)
-                        Console.WriteLine("");
                 }
+                Console.WriteLine("");
             }
 
         }

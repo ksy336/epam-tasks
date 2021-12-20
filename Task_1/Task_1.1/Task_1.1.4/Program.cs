@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp4
+namespace ConsoleApp6
 {
     internal class Program
     {
@@ -20,17 +20,15 @@ namespace ConsoleApp4
             Console.Clear();
 
 
-            for(int i = 1; i <= n; i++)
+            for (int i = 0; i <= n; i++)
             {
-                for(
+                for (
                     var j = 0; j <= i; j++)
                 {
                     var branch = new String('*', j);
                     Console.WriteLine(branch.PadLeft(n) + "*" + branch);
                 }
             }
-               
         }
     }
 }
-
