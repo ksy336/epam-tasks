@@ -22,7 +22,6 @@ namespace Task_7
             
             GetMaxValue(arr);
             GetMinValue(arr);
-           // Console.WriteLine($"Array = {string.Join(",", arr)}");
             GetSortedArray(arr);
         }
         public static void GetMaxValue(int[] arr)
